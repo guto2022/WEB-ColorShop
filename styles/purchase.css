@@ -1,0 +1,115 @@
+/* ===== ESTILOS DA PÁGINA "ADQUIRA A SUA" ===== */
+.pricing-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.pricing-card.featured {
+    transform: scale(1.05);
+    border: 2px solid #6e45e2;
+    z-index: 1;
+}
+
+.pricing-card.featured::before {
+    content: 'MAIS POPULAR';
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    background: #6e45e2;
+    color: white;
+    padding: 5px 30px;
+    font-size: 12px;
+    font-weight: bold;
+    transform: rotate(45deg);
+}
+
+.pricing-header {
+    padding: 25px;
+    text-align: center;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    color: white;
+}
+
+.price {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.price span {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.pricing-features {
+    padding: 25px;
+}
+
+.pricing-features ul {
+    list-style: none;
+}
+
+.pricing-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-btn {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    padding: 12px;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pricing-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(110, 69, 226, 0.4);
+}
+
+.faq-section {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.faq-question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #444;
+    font-size: 18px;
+}
